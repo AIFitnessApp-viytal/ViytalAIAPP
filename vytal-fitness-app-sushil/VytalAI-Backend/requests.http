@@ -1,0 +1,22 @@
+###
+# Test 1: Get All Products
+# @name getAllProducts
+GET http://localhost:3001/api/products
+
+
+###
+# Test 2: Get a Specific User's Profile
+# @name getUserProfile
+GET http://localhost:3001/api/users/1/profile
+
+
+###
+# Test 3: User Login (Successful)
+# @name userLogin
+POST http://localhost:3001/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "user@vytal.ai",
+  "password": "password"
+}
